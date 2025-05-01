@@ -1,25 +1,28 @@
 package com.yourorg.scheduler.domain;
 
 public class Section {
-    private String id;
-    private Department dept;
-    private int numClassesPerWeek;
+    private String sectionName;
+    private String instructor;
 
-    public Section(String id, Department dept, int numClassesPerWeek) {
-        this.id = id;
-        this.dept = dept;
-        this.numClassesPerWeek = numClassesPerWeek;
+    public Section(String sectionName, String instructor) {
+        this.sectionName = sectionName;
+        this.instructor = instructor;
     }
 
-    public String getId() {
-        return id;
+    // Getters and Setters
+    public String getSectionName() {
+        return sectionName;
     }
 
-    public Department getDept() {
-        return dept;
+    public void setSectionName(String sectionName) {
+        this.sectionName = sectionName;
     }
 
-    public int getNumClassesPerWeek() {
-        return numClassesPerWeek;
+    public String getInstructor() {
+        return instructor;
+    }
+
+    public void setInstructor(String instructor) {
+        this.instructor = instructor;
     }
 }

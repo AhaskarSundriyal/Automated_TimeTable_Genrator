@@ -1,33 +1,28 @@
 package com.yourorg.scheduler.domain;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Course {
-    private String id;
-    private String name;
-    private int maxStudents;
-    private List<Instructor> instructors = new ArrayList<>();
+    private String courseName;
+    private String courseCode;
 
-    public Course(String id, String name, int maxStudents) {
-        this.id = id;
-        this.name = name;
-        this.maxStudents = maxStudents;
+    public Course(String courseName, String courseCode) {
+        this.courseName = courseName;
+        this.courseCode = courseCode;
     }
 
-    public String getId() {
-        return id;
+    // Getters and Setters
+    public String getCourseName() {
+        return courseName;
     }
 
-    public String getName() {
-        return name;
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
     }
 
-    public int getMaxStudents() {
-        return maxStudents;
+    public String getCourseCode() {
+        return courseCode;
     }
 
-    public List<Instructor> getInstructors() {
-        return instructors;
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
     }
 }
